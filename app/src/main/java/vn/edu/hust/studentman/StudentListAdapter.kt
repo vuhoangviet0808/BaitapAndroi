@@ -1,3 +1,5 @@
+package vn.edu.hust.studentman
+
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Context
@@ -6,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import com.google.android.material.snackbar.Snackbar
-import vn.edu.hust.studentman.R
 import vn.edu.hust.studentman.StudentModel
 
 class StudentListAdapter(
