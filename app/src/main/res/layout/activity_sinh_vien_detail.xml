@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- MSSV -->
+    <TextView
+        android:id="@+id/tvMssv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSSV:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMssv"
+        android:layout_width="333dp"
+        android:layout_height="66dp"
+        android:enabled="false"
+        android:hint="Nhập MSSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMssv"
+        app:layout_constraintTop_toTopOf="@id/tvMssv" />
+
+    <!-- Họ tên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ tên:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMssv" />
+
+    <EditText
+        android:id="@+id/etHoTen"
+        android:layout_width="332dp"
+        android:layout_height="66dp"
+        android:hint="Nhập họ tên"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/etMssv"
+        app:layout_constraintTop_toBottomOf="@id/etMssv" />
+
+    <!-- Ngày sinh -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etHoTen" />
+
+    <EditText
+        android:id="@+id/etNgaySinh"
+        android:layout_width="329dp"
+        android:layout_height="58dp"
+        android:hint="Nhập ngày sinh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/etHoTen"
+        app:layout_constraintTop_toBottomOf="@id/etHoTen" />
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNgaySinh" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="335dp"
+        android:layout_height="58dp"
+        android:hint="Nhập email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/etNgaySinh"
+        app:layout_constraintTop_toBottomOf="@id/etNgaySinh" />
+
+    <!-- Nút Xóa -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Nút Cập nhật -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
